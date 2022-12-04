@@ -1,0 +1,29 @@
+// utils styles
+@import './utils/variables';
+@import './utils/mixins';
+
+// base styles
+@import './base/base';
+@import './base/reset';
+@import './base/card-set';
+
+// components styles
+@import './components/container';
+@import './components/btn';
+@import './components/header';
+@import './components/logo';
+@import './components/nav';
+@import './components/hero';
+@import './components/benefits';
+@import './components/about';
+@import './components/overlay';
+@import './components/team';
+@import './components/socials';
+@import './components/clients';
+@import './components/footer';
+@import './components/subscribe';
+@import './components/filter';
+@import './components/portfolio';
+@import './components/backdrop';
+@import './components/close-btn';
+@import './components/modal';

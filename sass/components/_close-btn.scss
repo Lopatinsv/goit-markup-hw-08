@@ -1,0 +1,28 @@
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  padding: 0;
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-btn__icon {
+  fill: rgba(0, 0, 0, 1);
+
+  transition: fill var(--anim-fast);
+
+  &:hover {
+    fill: #2196F3;
+    }
+}
