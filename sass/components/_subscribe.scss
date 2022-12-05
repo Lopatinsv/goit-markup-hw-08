@@ -2,20 +2,30 @@
   display: flex;
   flex-direction: column;
   flex-basis: 570px;
-  margin-left: 93px;
-  padding-top: 12px;
+  
+
+  @media screen and (min-width:1200px) {
+   margin-left: 93px;
+   padding-top: 12px;
+  }
 }
 
 .subscribe__form {
   display: flex;
   gap: 12px;
+
+  @media screen and (max-width:1199.98px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+  }
 }
 
 .subscribe__email {
-  flex-basis: 358px;
+  flex-basis: 450px;
   color: #FFFFFF;
   height: 50px;
-  padding-left: 16px;
+  margin-bottom: 20px;
 
   background-color: transparent;
   border: none;
@@ -31,6 +41,12 @@
 
     color: rgba(255, 255, 255, 0.6);
     }
+  
+  @media screen and (min-width:1200px) {
+    flex-basis: 358px;
+    padding-left: 16px;
+    margin-bottom: 0px;
+  }
 }
 
 .subscribe__btn {

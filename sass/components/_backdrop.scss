@@ -9,6 +9,10 @@
   background-color: rgba(0, 0, 0, 0.2);
   
   transition: opacity var(--anim-fast), visibility var(--anim-fast);
+
+  @media screen and (max-width:767.98px) {
+    overflow: scroll;
+  }
 }
 
 .backdrop.is-hidden {

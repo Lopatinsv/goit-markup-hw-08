@@ -1,5 +1,9 @@
 .nav {
   margin-right: auto;
+
+  @media screen and (max-width:767.98px) {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -29,6 +33,10 @@
     color: var(--button-cursor-color);
   }
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;  
+  }
 }
 
 .nav__link--current::after {
@@ -44,4 +52,8 @@
 
   border-radius: 2px;
   background-color: #2196F3;
+
+  @media screen and (max-widht:1199.98px) {
+    
+  }
 }

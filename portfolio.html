@@ -28,7 +28,7 @@
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link link">Студія</a>
+              <a href="./index.html" class="nav__link  link">Студія</a>
             </li>
             <li class="nav_item">
               <a href="./portfolio.html" class="nav__link nav__link--current link">Портфоліо</a>
@@ -52,6 +52,11 @@
                 </svg>+38 096 111 11 11</a>
             </li>
           </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- MAIN -->
@@ -61,19 +66,19 @@
         <div class="container">
           <h2 hidden>Портфоліо</h2>
           <ul class="filter__list list">
-            <li class="filter-item">
+            <li class="filter__item">
               <button type="button" class="filter__btn filter__btnfirst">Усі</button>
             </li>
-            <li class="filter-item">
+            <li class="filter__item">
               <button type="button" class="filter__btn">Веб-сайти</button>
             </li>
-            <li class="filter-item">
+            <li class="filter__item">
               <button type="button" class="filter__btn">Додатки</button>
             </li>
-            <li class="filter-item">
+            <li class="filter__item">
               <button type="button" class="filter__btn">Дизайн</button>
             </li>
-            <li class="filter-item">
+            <li class="filter__item">
               <button type="button" class="filter__btn">Маркетинг</button>
             </li>
           </ul>
@@ -81,11 +86,21 @@
             <li class="portfolio__item card-set__items">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/pf1.jpg"
-                  alt="Ноутбук"
-                  width="370"
-                  height="294"
                   class="portfolio__img"
+
+                  srcset="
+                  ./images/portfolio/pf-1_m@1x.jpg 354w,
+                  ./images/portfolio/pf-1_l@1x.jpg 370w,
+                  ./images/portfolio/pf-1_s@1x.jpg 450w,
+                  ./images/portfolio/pf-1_m@2x.jpg 708w,
+                  ./images/portfolio/pf-1_l@2x.jpg 740w,
+                  ./images/portfolio/pf-1_s@2x.jpg 900w"
+
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/pf-1_s@1x.jpg"
+                  alt="Баскетбол"
+                  width="450"
+                  height="294"
                 />
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
@@ -93,7 +108,7 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio__div">
+              <div class="portfolio__div portfolio__divfirst-child">
                 <h3 class="portfolio__title">Технокряк</h3>
                 <p class="portfolio__detail">Веб-сайт</p>
               </div>
@@ -101,11 +116,21 @@
             <li class="portfolio__item card-set__items">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/pf2.jpg"
-                  alt="Баскетбол"
-                  width="370"
-                  height="294"
                   class="portfolio__img"
+
+                  srcset="
+                  ./images/portfolio/pf-2_m@1x.jpg 354w,
+                  ./images/portfolio/pf-2_l@1x.jpg 370w,
+                  ./images/portfolio/pf-2_s@1x.jpg 450w,
+                  ./images/portfolio/pf-2_m@2x.jpg 708w,
+                  ./images/portfolio/pf-2_l@2x.jpg 740w,
+                  ./images/portfolio/pf-2_s@2x.jpg 900w"
+
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/pf-2_s@1x.jpg"
+                  alt="Баскетбол"
+                  width="450"
+                  height="294"
                 />
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
@@ -121,11 +146,21 @@
             <li class="portfolio__item card-set__items">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/pf3.jpg"
-                  alt="Текст"
-                  width="370"
-                  height="294"
                   class="portfolio__img"
+
+                  srcset="
+                  ./images/portfolio/pf-3_m@1x.jpg 354w,
+                  ./images/portfolio/pf-3_l@1x.jpg 370w,
+                  ./images/portfolio/pf-3_s@1x.jpg 450w,
+                  ./images/portfolio/pf-3_m@2x.jpg 708w,
+                  ./images/portfolio/pf-3_l@2x.jpg 740w,
+                  ./images/portfolio/pf-3_s@2x.jpg 900w"
+
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/pf-3_s@1x.jpg"
+                  alt="Баскетбол"
+                  width="450"
+                  height="294"
                 />
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
@@ -141,11 +176,21 @@
             <li class="portfolio__item card-set__items">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/pf4.jpg"
-                  alt="Навушники"
-                  width="370"
-                  height="294"
                   class="portfolio__img"
+
+                  srcset="
+                  ./images/portfolio/pf-4_m@1x.jpg 354w,
+                  ./images/portfolio/pf-4_l@1x.jpg 370w,
+                  ./images/portfolio/pf-4_s@1x.jpg 450w,
+                  ./images/portfolio/pf-4_m@2x.jpg 708w,
+                  ./images/portfolio/pf-4_l@2x.jpg 740w,
+                  ./images/portfolio/pf-4_s@2x.jpg 900w"
+
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/pf-4_s@1x.jpg"
+                  alt="Баскетбол"
+                  width="450"
+                  height="294"
                 />
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
@@ -161,11 +206,21 @@
             <li class="portfolio__item card-set__items">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/pf5.jpg"
-                  alt="Коробки"
-                  width="370"
-                  height="294"
                   class="portfolio__img"
+
+                  srcset="
+                  ./images/portfolio/pf-5_m@1x.jpg 354w,
+                  ./images/portfolio/pf-5_l@1x.jpg 370w,
+                  ./images/portfolio/pf-5_s@1x.jpg 450w,
+                  ./images/portfolio/pf-5_m@2x.jpg 708w,
+                  ./images/portfolio/pf-5_l@2x.jpg 740w,
+                  ./images/portfolio/pf-5_s@2x.jpg 900w"
+
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/pf-5_s@1x.jpg"
+                  alt="Баскетбол"
+                  width="450"
+                  height="294"
                 />
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
@@ -181,11 +236,21 @@
             <li class="portfolio__item card-set__items">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/pf6.jpg"
-                  alt="Монітор"
-                  width="370"
-                  height="294"
                   class="portfolio__img"
+
+                  srcset="
+                  ./images/portfolio/pf-6_m@1x.jpg 354w,
+                  ./images/portfolio/pf-6_l@1x.jpg 370w,
+                  ./images/portfolio/pf-6_s@1x.jpg 450w,
+                  ./images/portfolio/pf-6_m@2x.jpg 708w,
+                  ./images/portfolio/pf-6_l@2x.jpg 740w,
+                  ./images/portfolio/pf-6_s@2x.jpg 900w"
+
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/pf-6_s@1x.jpg"
+                  alt="Баскетбол"
+                  width="450"
+                  height="294"
                 />
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
@@ -201,11 +266,21 @@
             <li class="portfolio__item card-set__items">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/pf7.jpg"
-                  alt="Книга"
-                  width="370"
-                  height="294"
                   class="portfolio__img"
+
+                  srcset="
+                  ./images/portfolio/pf-7_m@1x.jpg 354w,
+                  ./images/portfolio/pf-7_l@1x.jpg 370w,
+                  ./images/portfolio/pf-7_s@1x.jpg 450w,
+                  ./images/portfolio/pf-7_m@2x.jpg 708w,
+                  ./images/portfolio/pf-7_l@2x.jpg 740w,
+                  ./images/portfolio/pf-7_s@2x.jpg 900w"
+
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/pf-7_s@1x.jpg"
+                  alt="Баскетбол"
+                  width="450"
+                  height="294"
                 />
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
@@ -221,11 +296,21 @@
             <li class="portfolio__item card-set__items">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/pf8.jpg"
-                  alt="Інсталяція"
-                  width="370"
-                  height="294"
                   class="portfolio__img"
+
+                  srcset="
+                  ./images/portfolio/pf-8_m@1x.jpg 354w,
+                  ./images/portfolio/pf-8_l@1x.jpg 370w,
+                  ./images/portfolio/pf-8_s@1x.jpg 450w,
+                  ./images/portfolio/pf-8_m@2x.jpg 708w,
+                  ./images/portfolio/pf-8_l@2x.jpg 740w,
+                  ./images/portfolio/pf-8_s@2x.jpg 900w"
+
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/pf-8_s@1x.jpg"
+                  alt="Баскетбол"
+                  width="450"
+                  height="294"
                 />
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
@@ -241,11 +326,21 @@
             <li class="portfolio__item card-set__items">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/pf9.jpg"
-                  alt="Друк тексту"
-                  width="370"
-                  height="294"
                   class="portfolio__img"
+
+                  srcset="
+                  ./images/portfolio/pf-9_m@1x.jpg 354w,
+                  ./images/portfolio/pf-9_l@1x.jpg 370w,
+                  ./images/portfolio/pf-9_s@1x.jpg 450w,
+                  ./images/portfolio/pf-9_m@2x.jpg 708w,
+                  ./images/portfolio/pf-9_l@2x.jpg 740w,
+                  ./images/portfolio/pf-9_s@2x.jpg 900w"
+
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/pf-9_s@1x.jpg"
+                  alt="Баскетбол"
+                  width="450"
+                  height="294"
                 />
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
@@ -323,5 +418,36 @@
           </div>
        </div>
     </footer>
+
+        <!-- mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      <svg class="close-menu-icon" width="40" height="40">
+      <use href="./images/icons.svg#close-menu"></use>
+      </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link ">Студія</a></li>
+        <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link mobile__link--current link">Портфоліо</a></li>
+        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item"><a href="tel.:+380961111111" class="mobile-phone-link link" >+38 096 111 11 11</a></li>
+        <li class="mobile-contacts-item"><a href="mailto:info@devstudio.com" class="mobile-mail-link link" >info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item"><a href="https://instagram.com" class="mobile-socials-link link">Instagram</a><span class="mobile-socials-link-line"></span></li>
+        <li class="mobile-socials-item"><a href="https://twitter.com" class="mobile-socials-link link">Twitter</a><span class="mobile-socials-link-line"></span></li>
+        <li class="mobile-socials-item"><a href="https://facebook.com" class="mobile-socials-link link">Facebook</a><span class="mobile-socials-link-line"></span></li>
+        <li class="mobile-socials-item"><a href="https://linkedin.com" class="mobile-socials-link link">LinkedIn</a><span class="mobile-socials-link-line"></span></li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

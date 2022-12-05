@@ -52,6 +52,11 @@
                 </svg>+38 096 111 11 11</a>
             </li>
           </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- MAIN -->
@@ -67,8 +72,8 @@
       <section class="benefits">
         <div class="container">
           <h2 hidden>Переваги</h2>
-          <ul class="benefits__list list">
-            <li class="benefits__item">
+          <ul class="benefits__list list card-set">
+            <li class="benefits__item card-set__items">
               <div class="benefits__icon--bg">
                 <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
@@ -80,7 +85,7 @@
                 формування позиції.
               </p>
             </li>
-            <li class="benefit__item">
+            <li class="benefits__item card-set__items">
               <div class="benefits__icon--bg">
                 <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
@@ -92,7 +97,7 @@
                 у себе.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item card-set__items">
               <div class="benefits__icon--bg">
                 <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
@@ -103,7 +108,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item card-set__items">
               <div class="benefits__icon--bg">
                 <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
@@ -125,7 +130,7 @@
           <ul class="about__list card-set list">
             <li class="about__item card-set__items">
               <img
-                src="./images/box1.jpg"
+                srcset="./images/about/about-1_l@1x.jpg 1x, ./images/about/about-1_l@2x.jpg 2x"
                 alt="Написання коду"
                 width="370"
                 height="294"
@@ -134,7 +139,7 @@
             </li>
             <li class="about__item card-set__items">
               <img
-                src="./images/box2.jpg"
+                srcset="./images/about/about-2_l@1x.jpg 1x, ./images/about/about-2_l@2x.jpg 2x"
                 alt="Розробка дизайну"
                 width="370"
                 height="294"
@@ -143,7 +148,7 @@
             </li>
             <li class="about__item card-set__items">
               <img
-                src="./images/box3.jpg"
+                srcset="./images/about/about-3_l@1x.jpg 1x, ./images/about/about-3_l@2x.jpg 2x"
                 alt="Вибір кольору"
                 width="370"
                 height="294"
@@ -160,11 +165,21 @@
           <ul class="team__list card-set list">
             <li class="team__item card-set__items">
               <img
-                src="./images/img1.jpg"
+                class="team__img"
+
+                srcset="
+                ./images/team/team-1_l@1x.jpg 270w,
+                ./images/team/team-1_m@1x.jpg 354w,
+                ./images/team/team-1_s@1x.jpg 450w,
+                ./images/team/team-1_l@2x.jpg 540w,
+                ./images/team/team-1_m@2x.jpg 708w,
+                ./images/team/team-1_s@2x.jpg 900w
+                " 
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/team-1_s@1x.jpg"
                 alt="Ігор"
-                width="270"
-                height="260"
-                class="team__img"/>
+                width="450"
+                height="460"/>
               <div class="team__wrapper">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__paragraph">Product Designer</p>
@@ -191,12 +206,21 @@
             </li>
             <li class="team__item card-set__items">
               <img
-                src="./images/img2.jpg"
-                alt="Ольга"
-                width="270"
-                height="260"
                 class="team__img"
-              />
+
+                srcset="
+                ./images/team/team-2_l@1x.jpg 270w,
+                ./images/team/team-2_m@1x.jpg 354w,
+                ./images/team/team-2_s@1x.jpg 450w,
+                ./images/team/team-2_l@2x.jpg 540w,
+                ./images/team/team-2_m@2x.jpg 708w,
+                ./images/team/team-2_s@2x.jpg 900w
+                " 
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/team-2_s@1x.jpg"
+                alt="Ігор"
+                width="450"
+                height="460"/>
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__paragraph">Frontend Developer</p>
@@ -223,12 +247,21 @@
             </li>
             <li class="team__item card-set__items">
               <img
-                src="./images/img3.jpg"
-                alt="Микола"
-                width="270"
-                height="260"
                 class="team__img"
-              />
+
+                srcset="
+                ./images/team/team-3_l@1x.jpg 270w,
+                ./images/team/team-3_m@1x.jpg 354w,
+                ./images/team/team-3_s@1x.jpg 450w,
+                ./images/team/team-3_l@2x.jpg 540w,
+                ./images/team/team-3_m@2x.jpg 708w,
+                ./images/team/team-3_s@2x.jpg 900w
+                " 
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/team-3_s@1x.jpg"
+                alt="Ігор"
+                width="450"
+                height="460"/>
               <div class="team__wrapper">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__paragraph">Marketing</p>
@@ -255,12 +288,21 @@
             </li>
             <li class="team__item card-set__items">
               <img
-                src="./images/img4.jpg"
-                alt="Михайло"
-                width="270"
-                height="260"
                 class="team__img"
-              />
+
+                srcset="
+                ./images/team/team-4_l@1x.jpg 270w,
+                ./images/team/team-4_m@1x.jpg 354w,
+                ./images/team/team-4_s@1x.jpg 450w,
+                ./images/team/team-4_l@2x.jpg 540w,
+                ./images/team/team-4_m@2x.jpg 708w,
+                ./images/team/team-4_s@2x.jpg 900w
+                " 
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/team-4_s@1x.jpg"
+                alt="Ігор"
+                width="450"
+                height="460"/>
               <div class="team__wrapper">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__paragraph">UI Designer</p>
@@ -290,51 +332,53 @@
       </section>
       <!-- CLIENTS -->
       <section class="clients">
-      <h2 class="clients__title upper-title">Постійні клієнти</h2>
-      <ul class="clients__list list">
-        <li class="clients__item">
-          <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
-          <svg class="clients__icon" width="106" height="60">
-            <use href="./images/icons.svg#client1"></use>
-          </svg>    
-          </a>
-        </li>
-        <li class="clients__item">
-          <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
-          <svg class="clients__icon" width="106" height="60">
-            <use href="./images/icons.svg#client2"></use>
-          </svg>    
-          </a>
-        </li>
-        <li class="clients__item">
-          <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
-          <svg class="clients__icon" width="106" height="60">
-            <use href="./images/icons.svg#client3"></use>
-          </svg>    
-          </a>
-        </li>
-        <li class="clients__item">
-          <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
-          <svg class="clients__icon" width="106" height="60">
-            <use href="./images/icons.svg#client4"></use>
-          </svg>    
-          </a>
-        </li>
-        <li class="clients__item">
-          <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
-          <svg class="clients__icon" width="106" height="60">
-            <use href="./images/icons.svg#client5"></use>
-          </svg>    
-          </a>
-        </li>
-        <li class="clients__item">
-          <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
-          <svg class="clients__icon" width="106" height="60">
-            <use href="./images/icons.svg#client6"></use>
-          </svg>    
-          </a>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="clients__title upper-title">Постійні клієнти</h2>
+        <ul class="clients__list card-set list">
+          <li class="clients__item card-set__items">
+            <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
+            <svg class="clients__icon" width="106" height="60">
+              <use href="./images/icons.svg#client1"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="clients__item card-set__items">
+            <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
+            <svg class="clients__icon" width="106" height="60">
+              <use href="./images/icons.svg#client2"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="clients__item card-set__items">
+            <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
+            <svg class="clients__icon" width="106" height="60">
+              <use href="./images/icons.svg#client3"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="clients__item card-set__items">
+            <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
+            <svg class="clients__icon" width="106" height="60">
+              <use href="./images/icons.svg#client4"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="clients__item card-set__items">
+            <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
+            <svg class="clients__icon" width="106" height="60">
+              <use href="./images/icons.svg#client5"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="clients__item card-set__items">
+            <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer">
+            <svg class="clients__icon" width="106" height="60">
+              <use href="./images/icons.svg#client6"></use>
+            </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       </section>
     </main>
     <!-- FOOTER -->
@@ -399,7 +443,7 @@
        </div>
     </footer>
 
-    <!-- Model window -->
+    <!-- Modal window -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -444,6 +488,36 @@
       </div>
     </div>
   
+    <!-- mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      <svg class="close-menu-icon" width="40" height="40">
+      <use href="./images/icons.svg#close-menu"></use>
+      </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link mobile__link--current">Студія</a></li>
+        <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link link">Портфоліо</a></li>
+        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item"><a href="tel.:+380961111111" class="mobile-phone-link link" >+38 096 111 11 11</a></li>
+        <li class="mobile-contacts-item"><a href="mailto:info@devstudio.com" class="mobile-mail-link link" >info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item"><a href="https://instagram.com" class="mobile-socials-link link">Instagram</a><span class="mobile-socials-link-line"></span></li>
+        <li class="mobile-socials-item"><a href="https://twitter.com" class="mobile-socials-link link">Twitter</a><span class="mobile-socials-link-line"></span></li>
+        <li class="mobile-socials-item"><a href="https://facebook.com" class="mobile-socials-link link">Facebook</a><span class="mobile-socials-link-line"></span></li>
+        <li class="mobile-socials-item"><a href="https://linkedin.com" class="mobile-socials-link link">LinkedIn</a><span class="mobile-socials-link-line"></span></li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
