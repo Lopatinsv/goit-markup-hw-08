@@ -177,6 +177,26 @@ img {
 .header__icon {
   fill: currentColor;
 }
+.header__icon--mail {
+  max-width: 14px;
+  max-height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header__icon--mail {
+    max-width: 16px;
+    max-height: 12px;
+  }
+}
+.header__icon--phone {
+  max-width: 10px;
+  max-height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .header__icon--phone {
+    max-width: 10px;
+    max-height: 16px;
+  }
+}
 
 .header__contact {
   display: -webkit-box;
